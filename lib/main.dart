@@ -1,19 +1,9 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide Router;
+import 'package:flutter_modular/flutter_modular.dart';
+import 'package:github_search_dart_clean/app_module.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(ModularApp(module: AppModule(),));
 }
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Container(),
-    );
-  }
-}
+

@@ -11,9 +11,9 @@ class ResultSearchModel extends ResultSearch {
 
   Map<String, dynamic> toMap() {
     return {
-      'title': title,
+      'login': title,
       'content': content,
-      'img': img
+      'avatar_url': img
     };
   }
 
@@ -22,9 +22,9 @@ class ResultSearchModel extends ResultSearch {
       return null;
 
     return ResultSearchModel(
-      title: map['title'],
+      title: map['login'],
       content: map['content'],
-      img: map['img']
+      img: map['avatar_url']
     );
   }
 
